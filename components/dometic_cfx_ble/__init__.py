@@ -29,7 +29,7 @@ PRODUCT_TYPES = cv.enum(
     upper=True,
 )
 
-TOPIC_TYPES = cv.one_of(
+TOPIC_TYPES = [
     "SUBSCRIBE_APP_SZ",
     "SUBSCRIBE_APP_SZI",
     "SUBSCRIBE_APP_DZ",
@@ -94,7 +94,7 @@ TOPIC_TYPES = cv.one_of(
     "DC_CURRENT_HISTORY_HOUR",
     "DC_CURRENT_HISTORY_DAY",
     "DC_CURRENT_HISTORY_WEEK",
-)
+]
 
 def validate_topic_type(value):
     """Ensure the YAML 'type' is one of the known topic types."""
@@ -105,6 +105,7 @@ def validate_topic_type(value):
             f"Valid values: {', '.join(TOPIC_TYPES)}"
         )
     return value
+
 
 CONFIG_SCHEMA = cv.Schema(
     {
