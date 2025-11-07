@@ -94,6 +94,10 @@ Each `type` corresponds to a protocol topic (see `TOPIC_TYPES` in `__init__.py` 
 
 ---
 
+Set your fridge Bluetooth Mode to PAIR, and run the module.
+
+test.py is also available to validate operation locally if needed (pair is required).
+
 ## How It Works
 
 - Connects to the Dometic CFX BLE service (`537a0300-0995-481f-926c-1604e23fd515`) and uses:
