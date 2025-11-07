@@ -1,12 +1,12 @@
 # ESPHome Dometic CFX BLE Component
 
-Custom ESPHome component to control and monitor **Dometic CFX** fridges over **Bluetooth Low Energy** using the native ESP-IDF BLE stack. It implements the Dometic pub/sub protocol and exposes it as standard ESPHome entities.
+ ESPHome External Component to control and monitor **Dometic CFX** fridges over **Bluetooth Low Energy** using the native ESP-IDF BLE stack. It implements the Dometic pub/sub protocol and exposes it as standard ESPHome entities.
 
 - Supports **single-zone (SZ)**, **single-zone + icemaker (SZI)**, and **dual-zone (DZ)** models via `product_type`.
 - Reads live data: compartment temperatures, door state, battery voltage, alerts, etc.
 - Controls: overall power, per-compartment power, set temperatures, and more.
 
-👉 **Quick links:**
+**Quick links:**
 
 - Example config: [`example.yaml`](example.yaml)  
 - Protocol reference: [`protocol.md`](protocol.md)  
