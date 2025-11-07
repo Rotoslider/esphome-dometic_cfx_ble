@@ -231,10 +231,10 @@ void DometicCfxBle::gattc_event_handler(esp_gattc_cb_event_t event,
   switch (event) {
     case ESP_GATTC_OPEN_EVT: {
       if (param->open.status == ESP_GATT_OK) {
-        ESP_LOGI(TAG, "GATT open ok, starting service discovery");
+        ESP_LOGI(TAG, "GATT open ok");
         this->connected_ = true;
         this->last_activity_ms_ = millis();
-        this->parent_->start_service_discovery();
+        // BLEClient will handle service discovery; nothing to do here.
       } else {
         ESP_LOGW(TAG, "GATT open failed: %d", param->open.status);
       }

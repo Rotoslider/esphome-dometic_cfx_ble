@@ -14,12 +14,14 @@ from esphome.const import (
 from esphome.cpp_types import Component
 from esphome import automation
 from esphome.components.ble_client import CONF_BLE_CLIENT_ID
+from esphome.components import ble_client
 
 AUTO_LOAD = ["esp32_ble_tracker", "ble_client", "select", "number", "switch", "text_sensor", "binary_sensor", "sensor"]
 DEPENDENCIES = ['esp32_ble_tracker', 'ble_client']
 
+
 dometic_cfx_ble_ns = cg.esphome_ns.namespace("dometic_cfx_ble")
-DometicCfxBle = dometic_cfx_ble_ns.class_("DometicCfxBle", cg.Component)
+DometicCfxBle = dometic_cfx_ble_ns.class_("DometicCfxBle", cg.Component, ble_client.BLEClientNode)
 
 CONF_PRODUCT_TYPE = "product_type"
 CONF_DOMETIC_CFX_BLE_ID = "dometic_cfx_ble_id"
