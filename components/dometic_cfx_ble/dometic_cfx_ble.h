@@ -6,7 +6,6 @@
 #include "esphome/core/entity_base.h"
 
 #include "esphome/components/ble_client/ble_client.h"  // For BLEClientNode
-#include "esphome/components/esp32_ble_tracker/ble_uuid.h" // For ESPBTUUID
 
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/components/binary_sensor/binary_sensor.h"
