@@ -12,9 +12,9 @@ namespace esphome {
 namespace dometic_cfx_ble {
 
 // UUID strings (from Dometic app)
-static const char *SERVICE_UUID = "537a0300-0995-481f-926c-1604e23fd515";
-static const char *WRITE_UUID   = "537a0301-0995-481f-926c-1604e23fd515";
-static const char *NOTIFY_UUID  = "537a0302-0995-481f-926c-1604e23fd515";
+static const char *SERVICE_UUID = "537a0400-0995-481f-926c-1604e23fd515";
+static const char *WRITE_UUID   = "537a0401-0995-481f-926c-1604e23fd515";
+static const char *NOTIFY_UUID  = "537a0402-0995-481f-926c-1604e23fd515";
 
 static const float NO_VALUE = -3276.8f;
 
